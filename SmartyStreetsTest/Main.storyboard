@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NzD-7l-OPo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ie0-yl-7Rq">
+            <objects>
+                <navigationController id="NzD-7l-OPo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BpE-Fy-MKc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ypO-a3-LvG" kind="relationship" relationship="rootViewController" id="6mx-WU-mJB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JG7-v1-i8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217" y="35"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="46g-48-ATb">
+            <objects>
+                <viewController id="z9r-6P-t4y" customClass="DetailViewController" customModule="SmartyStreetsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9n-0g-fMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvD-aO-RBV">
+                                <rect key="frame" x="20" y="128" width="374" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Vo3-Ap-8zX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g1J-Cd-MiS">
+                                <rect key="frame" x="20" y="477" width="374" height="385"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="385" id="MqS-OX-Cp2"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="385" id="eZp-N5-JNB"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="E9n-0g-fMe" id="iiy-im-x6e"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g1J-Cd-MiS" firstAttribute="bottom" secondItem="6UE-6V-3Be" secondAttribute="bottom" id="2W8-1T-YTv"/>
+                            <constraint firstItem="rvD-aO-RBV" firstAttribute="centerX" secondItem="E9n-0g-fMe" secondAttribute="centerX" id="Emq-dl-fWU"/>
+                            <constraint firstItem="g1J-Cd-MiS" firstAttribute="centerX" secondItem="E9n-0g-fMe" secondAttribute="centerX" id="HP1-iJ-nJZ"/>
+                            <constraint firstItem="rvD-aO-RBV" firstAttribute="leading" secondItem="6UE-6V-3Be" secondAttribute="leading" constant="20" id="P7j-3u-zpp"/>
+                            <constraint firstItem="g1J-Cd-MiS" firstAttribute="leading" secondItem="6UE-6V-3Be" secondAttribute="leading" constant="20" id="QsA-u9-BKe"/>
+                            <constraint firstItem="6UE-6V-3Be" firstAttribute="trailing" secondItem="g1J-Cd-MiS" secondAttribute="trailing" constant="20" id="Y8g-kn-8FV"/>
+                            <constraint firstItem="g1J-Cd-MiS" firstAttribute="top" relation="lessThanOrEqual" secondItem="rvD-aO-RBV" secondAttribute="bottom" priority="250" constant="220" id="du1-1R-Zs2"/>
+                            <constraint firstItem="rvD-aO-RBV" firstAttribute="top" secondItem="6UE-6V-3Be" secondAttribute="top" constant="40" id="gyh-LM-Xxf"/>
+                            <constraint firstItem="g1J-Cd-MiS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rvD-aO-RBV" secondAttribute="bottom" priority="250" constant="50" id="kPl-oo-SkY"/>
+                            <constraint firstItem="6UE-6V-3Be" firstAttribute="trailing" secondItem="rvD-aO-RBV" secondAttribute="trailing" constant="20" id="n6f-RG-EC8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6UE-6V-3Be"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailText" destination="rvD-aO-RBV" id="ag6-Ca-xAt"/>
+                        <outlet property="mapView" destination="g1J-Cd-MiS" id="p8z-gQ-I0s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbv-jv-YHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534.78260869565224" y="38.839285714285715"/>
+        </scene>
+        <!--Smarty Street List View Controller-->
+        <scene sceneID="mgQ-mP-zOa">
+            <objects>
+                <tableViewController id="ypO-a3-LvG" customClass="SmartyStreetListViewController" customModule="SmartyStreetsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w5s-nH-Scx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listTableCell" rowHeight="75" id="8lO-AY-dcy" customClass="AddressListTableCell" customModule="SmartyStreetsTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8lO-AY-dcy" id="Ppo-91-6cK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zq-dn-ycZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8Zq-dn-ycZ" secondAttribute="trailing" id="41J-i2-tMa"/>
+                                        <constraint firstItem="8Zq-dn-ycZ" firstAttribute="centerY" secondItem="Ppo-91-6cK" secondAttribute="centerY" id="Kbg-as-Jwe"/>
+                                        <constraint firstItem="8Zq-dn-ycZ" firstAttribute="centerX" secondItem="Ppo-91-6cK" secondAttribute="centerX" id="dTz-iN-7rE"/>
+                                        <constraint firstAttribute="bottom" secondItem="8Zq-dn-ycZ" secondAttribute="bottom" id="djt-Vj-8h9"/>
+                                        <constraint firstItem="8Zq-dn-ycZ" firstAttribute="top" secondItem="Ppo-91-6cK" secondAttribute="top" id="kf7-BZ-CbO"/>
+                                        <constraint firstItem="8Zq-dn-ycZ" firstAttribute="leading" secondItem="Ppo-91-6cK" secondAttribute="leading" id="qJh-bv-SDh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="informationTextView" destination="8Zq-dn-ycZ" id="Lt4-Zv-cyb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ypO-a3-LvG" id="sRN-av-n9m"/>
+                            <outlet property="delegate" destination="ypO-a3-LvG" id="lEL-0m-9eY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="sWg-Rp-ku1"/>
+                    <connections>
+                        <segue destination="z9r-6P-t4y" kind="show" identifier="toAddressDetails" id="RDY-0N-fyn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uty-yC-MFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349.27536231884062" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+</document>

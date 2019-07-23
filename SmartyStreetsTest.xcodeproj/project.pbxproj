@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ED598B022E60F9C0012A797 /* AddressListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED598AF22E60F9C0012A797 /* AddressListTableCell.swift */; };
+		0ED598B222E626800012A797 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED598B122E626800012A797 /* DetailViewController.swift */; };
 		0EDE481922E4B759001CE269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE481822E4B759001CE269 /* AppDelegate.swift */; };
 		0EDE481B22E4B759001CE269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE481A22E4B759001CE269 /* ViewController.swift */; };
-		0EDE481E22E4B759001CE269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDE481C22E4B759001CE269 /* Main.storyboard */; };
 		0EDE482022E4B75A001CE269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDE481F22E4B75A001CE269 /* Assets.xcassets */; };
 		0EDE482322E4B75A001CE269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDE482122E4B75A001CE269 /* LaunchScreen.storyboard */; };
 		0EDE482E22E4B75B001CE269 /* SmartyStreetsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE482D22E4B75B001CE269 /* SmartyStreetsTestTests.swift */; };
 		0EDE483922E4B75B001CE269 /* SmartyStreetsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE483822E4B75B001CE269 /* SmartyStreetsTestUITests.swift */; };
+		0EDE484722E4B7B0001CE269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDE484622E4B7AF001CE269 /* Main.storyboard */; };
+		0EDE484B22E4BC4B001CE269 /* SmartyStreetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE484A22E4BC4B001CE269 /* SmartyStreetListViewController.swift */; };
+		0EDE484F22E4BFDB001CE269 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE484E22E4BFDB001CE269 /* DatabaseManager.swift */; };
+		0EDE485122E4C054001CE269 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485022E4C053001CE269 /* DataParser.swift */; };
+		0EDE485322E4C065001CE269 /* GenerateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485222E4C065001CE269 /* GenerateRequest.swift */; };
+		0EDE485722E4C096001CE269 /* WebServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485622E4C096001CE269 /* WebServiceConnector.swift */; };
+		0EDE485A22E5CE16001CE269 /* SmartyStreetResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485922E5CE16001CE269 /* SmartyStreetResult.swift */; };
+		0EDE485C22E5CEF3001CE269 /* SmartyStreetsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485B22E5CEF3001CE269 /* SmartyStreetsComponent.swift */; };
+		0EDE485E22E5D014001CE269 /* SmartyStreetMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE485D22E5D014001CE269 /* SmartyStreetMetaData.swift */; };
+		0EDE486222E5E5AC001CE269 /* SmartyStreetLookupTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE486122E5E5AC001CE269 /* SmartyStreetLookupTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0ED598AF22E60F9C0012A797 /* AddressListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTableCell.swift; sourceTree = "<group>"; };
+		0ED598B122E626800012A797 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0EDE481522E4B759001CE269 /* SmartyStreetsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartyStreetsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDE481822E4B759001CE269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDE481A22E4B759001CE269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EDE481D22E4B759001CE269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EDE481F22E4B75A001CE269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EDE482222E4B75A001CE269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EDE482422E4B75B001CE269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +59,18 @@
 		0EDE483422E4B75B001CE269 /* SmartyStreetsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartyStreetsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDE483822E4B75B001CE269 /* SmartyStreetsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetsTestUITests.swift; sourceTree = "<group>"; };
 		0EDE483A22E4B75B001CE269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EDE484622E4B7AF001CE269 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0EDE484A22E4BC4B001CE269 /* SmartyStreetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetListViewController.swift; sourceTree = "<group>"; };
+		0EDE484E22E4BFDB001CE269 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0EDE485022E4C053001CE269 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		0EDE485222E4C065001CE269 /* GenerateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRequest.swift; sourceTree = "<group>"; };
+		0EDE485622E4C096001CE269 /* WebServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceConnector.swift; sourceTree = "<group>"; };
+		0EDE485822E4C201001CE269 /* Crypto_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto_Header.h; sourceTree = "<group>"; };
+		0EDE485922E5CE16001CE269 /* SmartyStreetResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetResult.swift; sourceTree = "<group>"; };
+		0EDE485B22E5CEF3001CE269 /* SmartyStreetsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetsComponent.swift; sourceTree = "<group>"; };
+		0EDE485D22E5D014001CE269 /* SmartyStreetMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetMetaData.swift; sourceTree = "<group>"; };
+		0EDE485F22E5DEB2001CE269 /* SmartystreetsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SmartystreetsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDE486122E5E5AC001CE269 /* SmartyStreetLookupTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyStreetLookupTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,7 @@
 				0EDE482C22E4B75B001CE269 /* SmartyStreetsTestTests */,
 				0EDE483722E4B75B001CE269 /* SmartyStreetsTestUITests */,
 				0EDE481622E4B759001CE269 /* Products */,
+				E902F32A14782077F62C20B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +122,15 @@
 		0EDE481722E4B759001CE269 /* SmartyStreetsTest */ = {
 			isa = PBXGroup;
 			children = (
+				0EDE484D22E4BFBD001CE269 /* Utility */,
+				0EDE484C22E4BFAF001CE269 /* Tasks */,
+				0EDE484922E4BBB4001CE269 /* Views */,
+				0EDE484822E4BB90001CE269 /* Models */,
 				0EDE481822E4B759001CE269 /* AppDelegate.swift */,
 				0EDE481A22E4B759001CE269 /* ViewController.swift */,
-				0EDE481C22E4B759001CE269 /* Main.storyboard */,
 				0EDE481F22E4B75A001CE269 /* Assets.xcassets */,
 				0EDE482122E4B75A001CE269 /* LaunchScreen.storyboard */,
+				0EDE484622E4B7AF001CE269 /* Main.storyboard */,
 				0EDE482422E4B75B001CE269 /* Info.plist */,
 			);
 			path = SmartyStreetsTest;
@@ -123,6 +152,62 @@
 				0EDE483A22E4B75B001CE269 /* Info.plist */,
 			);
 			path = SmartyStreetsTestUITests;
+			sourceTree = "<group>";
+		};
+		0EDE484822E4BB90001CE269 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE485922E5CE16001CE269 /* SmartyStreetResult.swift */,
+				0EDE485B22E5CEF3001CE269 /* SmartyStreetsComponent.swift */,
+				0EDE485D22E5D014001CE269 /* SmartyStreetMetaData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EDE484922E4BBB4001CE269 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE486322E60F51001CE269 /* TableCellView */,
+				0EDE484A22E4BC4B001CE269 /* SmartyStreetListViewController.swift */,
+				0ED598B122E626800012A797 /* DetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EDE484C22E4BFAF001CE269 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE486122E5E5AC001CE269 /* SmartyStreetLookupTask.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		0EDE484D22E4BFBD001CE269 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE484E22E4BFDB001CE269 /* DatabaseManager.swift */,
+				0EDE485022E4C053001CE269 /* DataParser.swift */,
+				0EDE485222E4C065001CE269 /* GenerateRequest.swift */,
+				0EDE485622E4C096001CE269 /* WebServiceConnector.swift */,
+				0EDE485822E4C201001CE269 /* Crypto_Header.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0EDE486322E60F51001CE269 /* TableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				0ED598AF22E60F9C0012A797 /* AddressListTableCell.swift */,
+			);
+			path = TableCellView;
+			sourceTree = "<group>";
+		};
+		E902F32A14782077F62C20B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE485F22E5DEB2001CE269 /* SmartystreetsSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +314,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDE484722E4B7B0001CE269 /* Main.storyboard in Resources */,
 				0EDE482322E4B75A001CE269 /* LaunchScreen.storyboard in Resources */,
 				0EDE482022E4B75A001CE269 /* Assets.xcassets in Resources */,
-				0EDE481E22E4B759001CE269 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +341,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED598B222E626800012A797 /* DetailViewController.swift in Sources */,
+				0EDE485322E4C065001CE269 /* GenerateRequest.swift in Sources */,
+				0EDE484F22E4BFDB001CE269 /* DatabaseManager.swift in Sources */,
+				0EDE485122E4C054001CE269 /* DataParser.swift in Sources */,
+				0EDE486222E5E5AC001CE269 /* SmartyStreetLookupTask.swift in Sources */,
+				0EDE485E22E5D014001CE269 /* SmartyStreetMetaData.swift in Sources */,
+				0EDE485C22E5CEF3001CE269 /* SmartyStreetsComponent.swift in Sources */,
 				0EDE481B22E4B759001CE269 /* ViewController.swift in Sources */,
+				0EDE484B22E4BC4B001CE269 /* SmartyStreetListViewController.swift in Sources */,
+				0EDE485722E4C096001CE269 /* WebServiceConnector.swift in Sources */,
 				0EDE481922E4B759001CE269 /* AppDelegate.swift in Sources */,
+				0EDE485A22E5CE16001CE269 /* SmartyStreetResult.swift in Sources */,
+				0ED598B022E60F9C0012A797 /* AddressListTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EDE481C22E4B759001CE269 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EDE481D22E4B759001CE269 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EDE482122E4B75A001CE269 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = Q646F6H976;
 				INFOPLIST_FILE = SmartyStreetsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,6 +530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rl.SmartyStreetsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/MyLaptop/Library/Autosave Information/SmartyStreetsTest/SmartyStreetsTest/Utility/Crypto_Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = Q646F6H976;
 				INFOPLIST_FILE = SmartyStreetsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,6 +550,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rl.SmartyStreetsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/MyLaptop/Library/Autosave Information/SmartyStreetsTest/SmartyStreetsTest/Utility/Crypto_Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
