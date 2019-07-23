@@ -50,6 +50,9 @@ class DetailViewController: UIViewController
         FillInInformation()
     }
     
+    
+    //for brevity I only display minimal information due to only storing some of the fields in the database.
+    //could be expanded if I expand the number of fields of data I store in the database
     func FillInInformation()
     {
         let boldAttribute = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)]
@@ -66,7 +69,7 @@ class DetailViewController: UIViewController
     
     func centerMapOnLocation(location : CLLocation)
     {
-        let regionRadius : CLLocationDistance = 100
+        let regionRadius : CLLocationDistance = 500
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         let annotation = MKPointAnnotation()
         annotation.coordinate = location.coordinate

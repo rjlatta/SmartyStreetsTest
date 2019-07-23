@@ -12,6 +12,10 @@ import Foundation
 /**
  - parameters:
  - T: Generic object that is determined by being passed into getData Function
+ I wanted this written as a generic to allow it to be used for many applications without needing to rewrite often
+ I made it as a completion handler for readability. It use to be written as the protocol delegate pattern before but
+ having the call back appear elsewhere in the calling class away from where the call started could be confusing. Having
+ a completion handler makes the callback appear where the call happens now.
  */
 class WebServiceConnector
 {

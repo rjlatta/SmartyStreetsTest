@@ -37,7 +37,7 @@ class SmartyStreetListViewController: UITableViewController
         
         self.tableView.estimatedRowHeight = 44
         
-        navigationController?.navigationBar.backgroundColor = .yellow
+        
         navigationController?.navigationBar.isHidden = false
         //BarButton to run a new smarty Street Lookup.
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: UIBarButtonItem.Style.plain, target: self, action: #selector(smartyStreetPopup))
@@ -48,7 +48,7 @@ class SmartyStreetListViewController: UITableViewController
         createDataBaseTable()
         loadAddressData()
     }
-    
+    //Thought a popup would be cleaner than shifting to a new view
     @objc func smartyStreetPopup()
     {
         //shows a popup where user can enter an address to look up
@@ -168,23 +168,27 @@ class SmartyStreetListViewController: UITableViewController
         
     }
     
+    
+
     func loadAddressData()
     {
         let databaseConnection = openDataBaseConnection()
         if(databaseConnection != nil)
         {
             addressLookUps = manager!.queryDataBase(connection: databaseConnection!)
-            manager!.deleteAllData(connection: databaseConnection!)
+            
             updateNeeded = true
             tableView.reloadData()
             closeDataBaseConnection(databasePointer: databaseConnection!)
         }
         
     }
-    
+    // made it clear the database after loading data so that I could better manage the id as I write the objects into the database
+    // since I read the auto increment is very slow
     @objc func writeToDataBase()
     {
         let databaseConnection = openDataBaseConnection()
+        manager!.deleteAllData(connection: databaseConnection!)
         if(databaseConnection != nil)
         {
             var count = 1
@@ -207,17 +211,7 @@ class SmartyStreetListViewController: UITableViewController
             manager!.closeDatabaseConnection(connection: databasePointer)
         }
     }
-    
-    func cleanUp()
-    {
-        if(updateNeeded)
-        {
-            writeToDataBase()
-        }
-        manager = nil
-        detailsToPass = nil
-        addressLookUps.removeAll()
-    }
+
     
     deinit {
         

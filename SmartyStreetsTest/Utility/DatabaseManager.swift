@@ -9,11 +9,13 @@
 import Foundation
 import SQLite3
 
-
+/**
+ Seperate clas that hass all of the methods needed to interact with a sqlite database
+ */
 class DatabaseManager
 {
 
-    
+    //returns a pointer to database. It is opaque becuase we can't see what is inside the connection
     func OpenDatabaseConnection(databaseName : String) -> OpaquePointer?
     {
         let databaseURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent(databaseName)
@@ -57,12 +59,12 @@ class DatabaseManager
             return true
         }
     }
-    
+    //I only store the most important pieces of information for time. Full scale I would store every value in the object
     func insertRow(connection : OpaquePointer, id : Int32, addressOne : String, addressTwo : String, county : String, latitude : String, longitude : String)
     {
-        //let insertStatementString = "INSERT INTO Orders (Id, Name, Address, OrderDate, DeliveryDate, OrderList) VALUES (?, ?, ?, ?, ?, ?);"
+
         let insertStatementString = "INSERT INTO Addresses (Id, delivery_line, last_line, county, latitude, longitude) VALUES (\(id), \'\(addressOne)\', \'\(addressTwo)\', \'\(county)\', \'\(latitude)\', \'\(longitude)\');"
-        //let insertStatementString = "INSERT INTO Orders (Name, Address, OrderDate, DeliveryDate, OrderList) VALUES (\'\(name)\', \'\(address)\', \'\(orderDate)\', \'\(deliveryDate)\', \'\(orderList)\');"
+
         var insertStatement : OpaquePointer? = nil
         
         if sqlite3_prepare_v2(connection, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK

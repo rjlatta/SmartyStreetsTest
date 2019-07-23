@@ -15,7 +15,9 @@ class SmartyStreetLookupTask
      - parameters:
      - privateId: Id assigned by smarty streets to validate a valid call
      - privateToken: Token also assigned by smarty streets to validate valid call
+     I like splitting tasks off into their own class to reduce code bloat in the view classes
      */
+    //Free account, Limited to 250 per month. 28 used lookups as of this commit
     private let privateId = "8af87e40-e280-f3f5-7277-ad9bee3c7f38"
     private let privateToken = "7hdf4VtH55dnn2ont09A"
     

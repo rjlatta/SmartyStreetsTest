@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+/**
+ - parameters:
+ - T: Generic where object type is passed in to parse JSON data into the passed in object to be returned
+ */
 class DataParser : NSObject
 {
     class func parseDataToObjectArray<T : Decodable>(data : Data, classObject : T.Type) -> T?
