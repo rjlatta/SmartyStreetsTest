@@ -1,6 +1,6 @@
 //
 //  DataParser.swift
-//  Health Ticket V3
+//  
 //
 //  Created by Robert Latta on 8/30/16.
 //  Copyright © 2016 Robert Latta. All rights reserved.

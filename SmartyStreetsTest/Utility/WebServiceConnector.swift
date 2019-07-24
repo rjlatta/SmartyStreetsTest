@@ -1,6 +1,6 @@
 //
 //  WebServiceConnector.swift
-//  NewWordSearch
+//  
 //
 //  Created by Robert Latta on 5/29/19.
 //  Copyright © 2019 rl. All rights reserved.

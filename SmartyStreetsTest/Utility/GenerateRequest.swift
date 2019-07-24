@@ -1,6 +1,6 @@
 //
 //  GenerateRequest.swift
-//  Key Risk
+//  
 //
 //  Created by Robert Latta on 6/30/17.
 //  Copyright © 2017 Robert Latta. All rights reserved.
